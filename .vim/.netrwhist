@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/bingranhu/infrastructure/.git'
+let g:netrw_dirhist_2='/home/bingranhu/terraform-scripts/aws/scripts/a.py'
+let g:netrw_dirhist_1='/home/bingranhu/cloud-image-generation/aarch64/config-files/clp'
+let g:netrw_dirhist_0='/home/bingranhu/terraform-scripts/aws/deployment-template'
+let g:netrw_dirhist_9='/home/bingranhu/.ssh'
+let g:netrw_dirhist_8='/home/bingranhu/packaging/out/clp-x86_64-master-package/lib/python3/site-packages/boto3/s3'
+let g:netrw_dirhist_7='/home/bingranhu/packaging/out'
+let g:netrw_dirhist_6='/home/bingranhu/packaging'
+let g:netrw_dirhist_5='/home/bingranhu/terraform-scripts/aws/deployment-template'
+let g:netrw_dirhist_4='/etc/profile.d'
