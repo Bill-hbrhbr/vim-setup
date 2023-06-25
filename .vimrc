@@ -12,6 +12,7 @@ set wildmenu
 set wildmode=full
 set history=200
 set hidden
+set cc=80,100
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 set nocompatible
@@ -71,3 +72,12 @@ vnoremap // :<c-u>let temp_variable=@"<CR>gvy:<c-u>let @/='\V<C-R>=escape(@",'/\
 
 " Tpope
 execute pathogen#infect()
+
+" Remove trailing whitespaces
+function! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
