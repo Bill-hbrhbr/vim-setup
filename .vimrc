@@ -81,3 +81,10 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+" Toggle paste options
+set pastetoggle=<F3>
+
+" Toggle line numbers from none at all
+" to relative numbering with current line number
+noremap <F4> :set invnumber invrelativenumber<CR>
