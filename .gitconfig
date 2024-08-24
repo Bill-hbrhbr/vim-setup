@@ -1,0 +1,10 @@
+[core]
+    excludesfile = ~/.gitignore
+[user]
+    email = bingran.hu@yscope.com
+    name = Bingran Hu
+[core]
+    editor = vim
+    autocrlf = input
+[diff "color"]
+    commit = cyan

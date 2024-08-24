@@ -1,0 +1,4 @@
+**/*.swp
+**/venv
+**/build
+**/*clang-tidy
