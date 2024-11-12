@@ -16,12 +16,12 @@ cp .gitconfig ~/
 cp .gitignore ~/
 
 cd ~ && mkdir myjdk && cd myjdk
-wget jdk-23_linux-x64_bin.tar.gz
+wget https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.tar.gz
 mkdir jdk-23
 tar xzf jdk-23_linux-x64_bin.tar.gz -C jdk-23 --strip-components 1
 
 echo "" >> ~/.bashrc
-echo "export JAVA_HOME=~/jdk/jdk-23" >> ~/.bashrc
+echo "export JAVA_HOME=~/myjdk/jdk-23" >> ~/.bashrc
 echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
 source ~/.bashrc
 
